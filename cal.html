@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css" type="text/css">
+    <script src="cal.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="cal">
+            <div class="val">
+                <form name="form1">
+                <div class="displayy">
+                    <input type="text" name="display" class="screen" >
+                </div>
+                </form>
+                <div class="r">
+                    <div class="but"><input class="top" type="button" value="AC" onclick="form1.display.value=' '"></div>
+                    <div class="but"><input class="top"  type="button" value="DE" onclick="form1.display.value=display.value.toString().slice(0,-1)"></div>
+                    <div class="but"><input class="top" type="button" value="." onclick="form1.display.value+='.'"></div>
+                    <div class="but top"><input class="top" type="button" value="/" onclick="form1.display.value+='/'"></div>
+                </div>
+                <div class="r">
+                    <div class="but"><input type="button" value="7" onclick="form1.display.value+='7'"></div>
+                    <div class="but"><input type="button" value="8" onclick="form1.display.value+='8'"></div>
+                    <div class="but"><input type="button" value="9" onclick="form1.display.value+='9'"></div>
+                    <div class="but"><input class="top" type="button" value="*" onclick="form1.display.value+='*'"></div>
+                </div>
+                <div class="r">
+                    <div class="but"><input type="button" value="4" onclick="form1.display.value+='4'"></div>
+                    <div class="but"><input type="button" value="5" onclick="form1.display.value+='5'"></div>
+                    <div class="but"><input type="button" value="6" onclick="form1.display.value+='6'"></div>
+                    <div class="but"><input class="top" type="button" value="-" onclick="form1.display.value+='-'"></div>
+                </div>
+                <div class="r">
+                    <div class="but"><input type="button" value="1" onclick="form1.display.value+='1'"></div>
+                    <div class="but"><input type="button" value="2" onclick="form1.display.value+='2'"></div>
+                    <div class="but"><input type="button" value="3" onclick="form1.display.value+='3'"></div>
+                    <div class="but"><input class="top"  type="button" value="+" onclick="form1.display.value+='+'"></div>
+                </div>
+                <div class="r">
+                    <div class="but bu"><input type="button" value="00" onclick="form1.display.value+='00'"></div>
+                    <div class="but bu"><input type="button" value="0" onclick="form1.display.value+='0'"></div>
+                    <div class="but last"><input class="top" type="button" value="ANS" onclick="form1.display.value=eval(form1.display.value)"></div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
